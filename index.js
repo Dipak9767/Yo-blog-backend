@@ -26,7 +26,7 @@ const store = new mongoDbSession({
   
   server.use(
     session({
-      secret: process.env.SECRECT_KEY,
+      secret:'blog',
       resave: false,
       saveUninitialized: false,
       store: store,

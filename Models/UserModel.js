@@ -33,7 +33,7 @@ const User = class {
     register() {
         return new Promise(async (resolve, reject) => {
 
-            const hashedPass = await bcrypt.hash(this.password, parseInt(process.env.SALT))
+            const hashedPass = await bcrypt.hash(this.password, parseInt(11))
             const user = new UserSchema({
                 name: this.name,
                 username: this.username,
